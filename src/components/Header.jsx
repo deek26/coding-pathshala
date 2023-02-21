@@ -6,10 +6,15 @@ import {FiUsers} from 'react-icons/fi'
 import {FiHeart} from 'react-icons/fi'
 import {BsHandbag} from 'react-icons/bs'
 import {IoIosArrowDown} from 'react-icons/io'
+import { useNavigate } from 'react-router'
+import { Link } from 'react-router-dom'
 
 
 export default function Header() {
 
+
+
+  const navigate =useNavigate()
 
 
 
@@ -26,16 +31,24 @@ export default function Header() {
 <>
 
   <div>
-      <header >
+      <header>
           <div className='flex justify-end items-center bg-black h-[40px]  '>
             <div >
               <ul className='flex space-x-4 mr-[130px]'>
-                <li className='text-white font-semibold text-[15px] cursor-pointer'>My Account</li>
-                <li className='bg-white w-[1px] h-3 mt-[6px]'></li>
-                <li className='text-white font-semibold text-[15px] cursor-pointer'>FAQs</li>
-                <li className='bg-white w-[1px] h-3 mt-[6px]'></li>
-                <li className='text-white font-semibold text-[15px]  cursor-pointer flex justify-center items-center '>Contact Us
-                 <ImWhatsapp className='ml-3 h-5 w-5'/>
+                <li className={`text-white font-semibold text-[15px] cursor-pointer`}
+                onClick={()=>navigate('/MyAccount')}
+                >My Account</li>
+                <li className={`bg-white w-[1px] h-3 mt-[6px]`}></li>
+                <li className={`text-white font-semibold text-[15px] cursor-pointer`}
+                onClick={()=>navigate('/FAQs')}
+                >FAQs</li>
+                <li className={`bg-white w-[1px] h-3 mt-[6px]`}></li>
+                <li className={`text-white font-semibold text-[15px]  cursor-pointer flex justify-center items-center `}
+                onClick={()=>navigate('/ContactUs')}
+                >Contact Us
+                 <ImWhatsapp className='ml-3 h-5 w-5' 
+                   onClick={()=>navigate('/Whatsapp')}
+                 />
                 </li>    
               </ul>
              </div>
@@ -43,9 +56,11 @@ export default function Header() {
           </div>
 
 
-          <div className='flex '>
+          <div className='flex mt-4 '>
              <div>
-                <img src={logo} alt='logo' className='h-[150px] w-[200px] ' />
+                <img src={logo} alt='logo' className='h-[100px] w-[200px] cursor-pointer '
+                onClick={()=>navigate('/home')}
+                />
                </div>
 
                <div className='flex items-center space-x-5'>
@@ -59,10 +74,10 @@ export default function Header() {
                   <div className='flex items-center'> 
                       <FiUsers className='h-[30px] w-[40px]' />
                     
-                  <div className='text-md cursor-pointer'>
-                     <p>Sign In</p>
-                     <p>Create an Account</p>
-                  </div>
+                      <div className='text-md cursor-pointer'>
+                        <p><Link to='/signin'>Sign In</Link></p>
+                        <p><Link to='/signup'>Create New Account</Link></p>
+                      </div>
                 </div>
 
                   <div className='flex items-center'> 
@@ -124,6 +139,7 @@ export default function Header() {
           </div>
 
            
+          
       </header>
 
       </div>
