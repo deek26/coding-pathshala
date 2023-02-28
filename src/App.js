@@ -13,6 +13,10 @@ import RequestForSpecimen from "./pages/RequestForSpecimen";
 import TrackYourOrders from "./pages/TrackYourOrders";
 import ConnectUs from "./pages/ConnectUs";
 import Team from "./pages/Team";
+import Career from "./pages/Career";
+import Catalogue from "./pages/Catalogue";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Shipping from "./pages/Shipping";
 
 
 function App() {
@@ -33,6 +37,11 @@ function App() {
         <Route path="/track-your-orders" element={<TrackYourOrders />} />
         <Route path="/connect-us" element={<ConnectUs />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/catalogue" element={<Catalogue />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/shipping" element={<Shipping />} />
+        
       </Routes>
 
       <Footer />

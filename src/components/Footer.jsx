@@ -28,7 +28,7 @@ export default function Footer() {
         <div>
         <h1 className='text-2xl mb-4'>My Account</h1>
             <div className='text-m text-gray-500 space-y-4'>
-                <p><Link to='/sign-in'>Sign In</Link></p>
+                <p><Link to='/myaccount'>Sign In</Link></p>
                 <p><Link to='/view-cart'>View Cart</Link></p>
                 <p><Link to='/contactus'>Contact </Link></p>
                 <p><Link to='/faqs'>FAQs</Link></p>
@@ -41,7 +41,7 @@ export default function Footer() {
         <h1 className='text-2xl mb-4'>Information</h1>
             <div className='text-m text-gray-500 space-y-4'>
                 <p><Link to='/privacy-policy'>Privacy Policy</Link></p>
-                <p><Link to='/shipping-returns-cancellations'>Shipping, Returns & Cancellations</Link></p>
+                <p><Link to='/shipping'>Shipping, Returns & Cancellations</Link></p>
             </div> 
         </div>
 
