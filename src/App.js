@@ -17,6 +17,11 @@ import Career from "./pages/Career";
 import Catalogue from "./pages/Catalogue";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Shipping from "./pages/Shipping";
+import Books from "./pages/Books";
+import ExamCombos from "./pages/ExamCombos";
+import OnlineTest from "./pages/OnlineTest";
+import VideoCourses from "./pages/VideoCourses";
+import Magazines from "./pages/Magazines";
 
 
 function App() {
@@ -41,6 +46,11 @@ function App() {
         <Route path="/catalogue" element={<Catalogue />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/shipping" element={<Shipping />} />
+        <Route path="/exam-combos" element={<ExamCombos />} />
+        <Route path="/online-test" element={<OnlineTest />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/videocourses" element={<VideoCourses />} />
+        <Route path="/magazines" element={<Magazines />} />
         
       </Routes>
 

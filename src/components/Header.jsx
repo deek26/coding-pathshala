@@ -117,9 +117,20 @@ export default function Header() {
 
 
                     </div>
-                    <div className='flex space-x-2 items-center cursor-pointer'>
-                      <p>Our Products</p>
+                    <div className=' group relative flex space-x-2 items-center cursor-pointer'>
+                      <p className='hover:text-yellow-600'>Our Products</p> 
                       <IoIosArrowDown/>
+                      <div className='hidden group-hover:block w-[200px] bg-white text-black h-[200px] top-[17px] list-none z-10  absolute p-4 my-2 space-y-4'>
+                        <Link to='/books' className='hover:text-yellow-600 mt-5'>Books</Link>
+                        <br />
+                        <Link to='/exam-combos' className='hover:text-yellow-600 mt-5'>Exam Combos</Link>
+                        <br />
+                        <Link to='/online-test' className='hover:text-yellow-600 mt-5'>Online Test</Link>
+                        <br />
+                        <Link to='/video-courses' className='hover:text-yellow-600 mt-5'>Video Courses</Link>
+                        <br />
+                        <Link to='/magazines' className='hover:text-yellow-600 mt-5'>Magazines</Link>
+                      </div>
                     </div>
                     <div className='flex space-x-2 items-center cursor-pointer'>
                       <p>Grow With Us</p>

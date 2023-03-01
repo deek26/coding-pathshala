@@ -41,11 +41,30 @@ export default function Home() {
                     <p>Thoroughly Revised And Update Content To <br /> Match Exam Pattern And Trend </p>
                   </div>
             
-              </div>
+              </div>   
 
           </div>
 
-    
+            <div  className='flex justify-around'>
+                <img src="jee.png" alt=""   className='w-[40%]'/>
+                <img src="neet.png" alt=""  className='w-[40%]' />
+               
+                
+            </div>
+            <div className='flex justify-around'>
+            <img src="upsc2.png" alt=""   className='w-[40%]'/>
+                <img src="cuet.png" alt=""  className='w-[40%]' />
+            </div>
+
+            <button className='font-serif font-thin bg-[#e6ce36] p-2 ml-[50%] shadow-gray-300 shadow-md my-8'>VIEW MORE</button>
+
+            <h1 className='my-10 text-2xl text-[#79442b] font-semibold font-serif ml-10'>Coding Pathshala's Other Products</h1>
+            <div className='flex justify-around my-10'>
+              <img src='video.jpg' />
+              <img src='online.jpg' />
+              <img src='download (2).jpg' />
+            </div>
+
     </>
   )
 }
