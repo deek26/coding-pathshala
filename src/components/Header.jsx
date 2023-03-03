@@ -104,7 +104,7 @@ export default function Header() {
 
           <div className='flex text-white space-x-[30px] items-center bg-black h-[60px] font-semibold cursor-pointer'>
 
-                    <div className='flex space-x-8 ml-[100px] border-[#6b705c] border-r-[1px] ' onClick={()=>dropdown}>
+                    <div className="flex items-center group pl-10 space-x-8 ml-[100px] border-[#6b705c] border-r-[1px] relative h-full  hover:bg-blue-600 ">
                         <p className='text-white'>
                           ALL CATEGORIES
                         </p>
@@ -114,22 +114,54 @@ export default function Header() {
                           <div className=' w-7 h-[4px] bg-white'></div>
                           <div className=' w-7 h-[3px] bg-white'></div>
                         </div>
+                        <div className=" hidden group-hover:block absolute top-[60px] left-[-40px] w-[359px] z-40 list-none bg-white text-black text-md space-y-2 font-semi-bold p-5 ">
+                <li className="hover:text-yellow-400  ">
+                  <Link>Civil Services &nbsp; &#62; </Link>
+                </li>
+                <hr />
+                <li className="hover:text-yellow-400  ">
+                  <Link>College Admissions &nbsp; &#62;</Link>
+                </li>
+                <hr />
+                <li className="hover:text-yellow-400  ">
+                  <Link>School &nbsp; &#62;</Link>
+                </li>
+                <hr />
+                <li className="hover:text-yellow-400  ">
+                  <Link>Govt. Vacancy Books &nbsp; &#62;</Link>
+                </li>
+                <hr />
+                <li className="hover:text-yellow-400  ">
+                  <Link>General Books &nbsp; &#62;</Link>
+                </li>
+              </div>
 
 
                     </div>
-                    <div className=' group relative flex space-x-2 items-center cursor-pointer'>
+                    <div className=' group relative flex space-x-2 items-center cursor-pointer h-full'>
                       <p className='hover:text-yellow-600'>Our Products</p> 
                       <IoIosArrowDown/>
-                      <div className='hidden group-hover:block w-[200px] bg-white text-black h-[200px] top-[17px] list-none z-10  absolute p-4 my-2 space-y-4'>
+                      <div className='hidden group-hover:block w-[200px] bg-white text-black h-[200px] top-[45px] list-none z-10  absolute py-4 my-2 px-2 space-y-4'>
+                        <li>
+
                         <Link to='/books' className='hover:text-yellow-600 mt-5'>Books</Link>
-                        <br />
+                        </li>
+                        <li>
+
                         <Link to='/exam-combos' className='hover:text-yellow-600 mt-5'>Exam Combos</Link>
-                        <br />
+                        </li>
+                        <li>
+
                         <Link to='/online-test' className='hover:text-yellow-600 mt-5'>Online Test</Link>
-                        <br />
-                        <Link to='/video-courses' className='hover:text-yellow-600 mt-5'>Video Courses</Link>
-                        <br />
+                        </li>
+                        <li>
+
+                        <Link to='/videocourses' className='hover:text-yellow-600 mt-5'>Video Courses</Link>
+                        </li>
+                        <li>
+
                         <Link to='/magazines' className='hover:text-yellow-600 mt-5'>Magazines</Link>
+                        </li>
                       </div>
                     </div>
                     <div className='flex space-x-2 items-center cursor-pointer'>
