@@ -22,6 +22,9 @@ import ExamCombos from "./pages/ExamCombos";
 import OnlineTest from "./pages/OnlineTest";
 import VideoCourses from "./pages/VideoCourses";
 import Magazines from "./pages/Magazines";
+import Affiliates from "./pages/Affiliates";
+import Authors from "./pages/Authors";
+import Partners from "./pages/Partners";
 
 
 function App() {
@@ -51,6 +54,9 @@ function App() {
         <Route path="/books" element={<Books />} />
         <Route path="/videocourses" element={<VideoCourses />} />
         <Route path="/magazines" element={<Magazines />} />
+        <Route path="/authors" element={<Authors />} />
+        <Route path="/affiliates" element={<Affiliates />} />
+        <Route path="/partners" element={<Partners />} />
         
       </Routes>
 

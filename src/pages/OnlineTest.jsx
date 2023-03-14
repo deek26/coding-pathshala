@@ -18,7 +18,7 @@ export default function OnlineTest() {
         <p className='absolute bottom-[25%] left-[10%] text-gray-500 text-sm'>520+ exams covered. Which exam are you preparing for?</p>
         <div>
           <input type="search" className='w-[35%] border-2 border-gray-200 px-2 absolute bottom-[14%] left-[10%] h-[50px] rounded-md outline-none' 
-          placeholder=' Deeksha Mam ko maro sabhi'/>
+          placeholder=' Search'/>
           <RiSearch2Line className='absolute bottom-[17%] left-[42%] text-lg text-gray-400' />
 
         </div>
@@ -319,6 +319,62 @@ export default function OnlineTest() {
         
       </div>
         
+
+        <div className='w-[60%] m-auto bg-blue-100 p-4 my-[100px] rounded-lg'>
+
+          <div className='flex items-center my-4'>
+            <p className='text-2xl font-bold'>Coding Pathshala </p>
+            <img src='logo.jpg' className='h-6 w-8'/>
+          </div>
+          <div className='flex justify-between text-3xl'>
+            <p>Get Unlimited Access to <br />  Test Series for 700+ <br />  Exams and much more.</p>
+            <div className='flex items-center gap-3'>
+              <p className=''>₹14/month</p>
+              <button className='bg-green-500 text-sm p-4 text-white font-bold rounded '>Buy Coding Pathshala's Pass</button>
+            </div>
+          </div>
+        </div>
+
+          <p className='my-16 ml-16 text-2xl font-serif'>Why Take Coding Pathshala's Series?</p>
+
+          <div className='flex  justify-center gap-8'>
+            <div className='border-2 border-gray-200 rounded-md space-y-5 text-center p-4'>
+              <img src='exam-patterns.svg' className='w-[50%] h-[50%] m-auto'/>
+              <h1 className='text-lg font-bold '>Latest Exam Patterns</h1>
+              <p className='text-gray-500'>Prepare for the level expected in the <br />upcoming exams.</p>
+            </div>
+
+            <div className='border-2 border-gray-200 rounded-md space-y-5 text-center p-4'>
+              <img src='save-test.svg' className='w-[50%] h-[50%] m-auto'/>
+              <h1 className='font-bold text-lg'>Save Tests & Questions</h1>
+              <p className='text-gray-500'>Save important Tests & Questions to <br />revise or reattempt them later.</p>
+            </div>
+
+            <div className='border-2 border-gray-200 rounded-md space-y-5 text-center p-4 '>
+              <img src='performance.svg' className='w-[50%] h-[50%] m-auto'/>
+              <h1 className='font-bold text-lg' >In-depth Performance Analysis</h1>
+              <p className='text-gray-500'>Get insights on your Strengths &<br /> Weaknesses, All India Rank &<br /> Performance Comparison with the <br />Topper</p>
+            </div>
+          </div>
+          
+
+          <div className='flex justify-around text-center my-40'>
+            <div>
+              <h1 className='font-semibold text-2xl'>3.2 Crore+</h1>
+              <p className='text-gray-500 text-xl'>STUDENTS LOVE US</p>
+            </div>
+
+            <div>
+              <h1 className='font-semibold text-2xl'>242 Crore+</h1>
+              <p className='text-gray-500 text-xl'>TESTS ATTEMPTED</p>
+            </div>
+
+            <div>
+              <h1 className='font-semibold text-2xl'>50k+</h1>
+              <p className='text-gray-500 text-xl'>STUDENT SELECTIONS</p>
+            </div>
+          </div>
+
 
     </div>
   )

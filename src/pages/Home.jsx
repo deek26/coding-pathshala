@@ -1,70 +1,79 @@
-import React from 'react'
+import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Home() {
   return (
-    <>
-    <div className='mb-4 flex justify-center space-x-11 mt-20'>
-            <div className='mb-40'>
-                <div className='h-32 '>
-                    <img src='./download.jpg' className='h-32 w-32 m-auto' />
-                    <h2 className='font-bold text-center text-red-600 text-lg'>TRUSTWORTHY</h2>
-                    <p>Commitment Of Quality Books With <br /> Accurate Content From India's Best
-                   Educators</p>
-                </div>      
-             </div>
-
-                <div>
-                  <div className='h-32 '>
-                  <img src='./learning.png' className='h-32 w-32 m-auto'/>
-                  <h2 className='font-bold text-center text-red-600 text-lg'>EXHAUSTED</h2>
-                    <p>360 Degree Solution To All Learning Needs <br />
-                    (Textbooks, Guides Samples, Solved Papers)</p>
-                </div>
-               
-
-               </div>
-
-              
-              <div>
-                  <div className='h-32 '>
-                    <img src='./compiled.png' className='h-32 w-32 m-auto'/>
-                    <h2 className='font-bold text-center text-red-600 text-lg'>INNOVATIVE</h2>
-                    <p>New Prep Strategies And Presentation <br />Styles To Make Exam Preparation Easy</p>
-                  </div>
-                 
-              </div>
-
-              <div>
-                  <div className='h-32 '>
-                    <img src='./study.png' className='h-[129px] w-[129px] m-auto' />
-                    <h2 className='font-bold text-center text-red-600 text-lg'>RELEVANT</h2>
-                    <p>Thoroughly Revised And Update Content To <br /> Match Exam Pattern And Trend </p>
-                  </div>
-            
-              </div>   
-
+    <div className="">
+      <div>
+        <img src="" alt="" />
+      </div>
+      <div className="bg-gray-400 w-[20%]  relative  overflow-scroll h-[400px]">
+        <div className=" flex justify-evenly items-center  py-2 ">
+          <div className="flex items-center space-x-2">
+            <GiHamburgerMenu></GiHamburgerMenu>
+            <p>Categories</p>
           </div>
-
-            <div  className='flex justify-around'>
-                <img src="jee.png" alt=""   className='w-[40%]'/>
-                <img src="neet.png" alt=""  className='w-[40%]' />
-               
-                
-            </div>
-            <div className='flex justify-around'>
-            <img src="upsc2.png" alt=""   className='w-[40%]'/>
-                <img src="cuet.png" alt=""  className='w-[40%]' />
-            </div>
-
-            <button className='font-serif font-thin bg-[#e6ce36] p-2 ml-[50%] shadow-gray-300 shadow-md my-8'>VIEW MORE</button>
-
-            <h1 className='my-10 text-2xl text-[#79442b] font-semibold font-serif ml-10'>Coding Pathshala's Other Products</h1>
-            <div className='flex justify-around my-10'>
-              <img src='video.jpg' />
-              <img src='online.jpg' />
-              <img src='download (2).jpg' />
-            </div>
-
-    </>
-  )
+          <button className="font-semibold bg-white px-1 text-sm rounded-md">
+            English
+          </button>
+          <button className="font-semibold bg-white px-1 text-sm rounded-md ">
+            Hindi
+          </button>
+        </div>
+        <ul className="bg-white text-sm px-2 space-y-1 py-1">
+          <li>AIR FORCE</li>
+          <li>ARITHMETIC/MATHS</li>
+          <li>B.ED./TEACHERS APTITUDE</li>
+          <li>BANK CLERK</li>
+          <li>BANK P.O.</li>
+          <li>CSIR-UGC NET/JRF/SET</li>
+          <li>
+            DDA EXAM.
+            <ul className="display:none">
+              <li>Delhi Development Authority</li>
+            </ul>
+          </li>
+          <li>DEFENCE SERVICES EXAM.</li>
+          <li>DELHI SSSB</li>
+          <li>ENGG. EXAM.</li>
+          <li>EPFO/ESIC</li>
+          <li>ESSAY/LETTERS</li>
+          <li>GATE/PSUs/JTO/ DRDO/IES/ISRO/TTA</li>
+          <li>GENERAL BOOKS</li>
+          <li>GENERAL ENGLISH</li>
+          <li>GENERAL KNOWLEDGE/STATE G.K.</li>
+          <li>INTELLIGENCE BUREAU (I.B.)</li>
+          <li>INTELLIGENCE TEST</li>
+          <li>INTERVIEW/PERSONALITY DEVELOPMENT</li>
+          <li>LAW SERIES/JUDICIAL SERVICES</li>
+          <li>Lecturer/Trained Graduate Teacher Rect. Exam.</li>
+          <li>LIC/GIC/OIC</li>
+          <li>MBA/MCA/BBA/BCA/ BIT/H.M./LLB./CAT/TTM</li>
+          <li>MISCELLANEOUS BOOKS</li>
+          <li>N.D.A./C.D.S.</li>
+          <li>NAVODAYA VIDYALAYA</li>
+          <li>NTSE/STSE</li>
+          <li>ONLINE TEST</li>
+          <li>PMT/PET/NURSING</li>
+          <li>POLICE CONSTABLE</li>
+          <li>POLICE SUB-INSPECTORS</li>
+          <li>POLYTECHNIC</li>
+          <li>RAILWAY TECHNICAL/ENGG. DIPLOMA</li>
+          <li>RAILWAY/S.C.R.A. EXAM.</li>
+          <li>RECENT RELEASES (ENGLISH BOOKS)</li>
+          <li>SAINIK/MILITARY SCHOOL EXAM.</li>
+          <li>
+            SSC
+            <ul className="display:none">
+              <li> Higher Secondary Level</li>
+              <li> Graduate Level</li>
+            </ul>
+          </li>
+          <li>TEACHER RECRUITMENT EXAMS.</li>
+          <li>UNION &amp; STATE CIVIL SERVICES PRE</li>
+          <li>Upkar Career Development Series Ki Pustakain</li>
+        </ul>
+      </div>
+    </div>
+  );
 }
