@@ -68,7 +68,7 @@ export default function Header() {
                         <input type='search' 
                         placeholder='Search entire store here....'
                         className='border-[2px] border-black w-[500px] h-[55px] rounded ml-48 pl-4'/>
-                        <select className="w-[170px] absolute right-[60px] outline-none rounded  bg-gray-200 py-[12px] px-2">
+                        <select className="w-[170px] absolute right-[60px] outline-none  bg-gray-200 py-[12px] px-2">
                   <option value="All">All Categories</option>
                   <option value="5">AIR FORCE </option>
                   <option value="21">ARITHMETIC/MATHS </option>
@@ -447,7 +447,7 @@ export default function Header() {
                     <div className=' group relative flex space-x-2 items-center cursor-pointer h-full hover:bg-blue-500 p-1 rounded-lg'>
                       <p className=''>Our Products</p> 
                       <IoIosArrowDown/>
-                      <div className='hidden group-hover:block w-[200px]  text-black h-[200px] top-[51px] left-[-10px] bg-gray-50 rounded-lg  list-none z-10  absolute py-4 my-2 px-5 space-y-4'>
+                      <div className='hidden group-hover:block w-[200px]  text-black h-[150px] top-[51px] left-[-10px] bg-gray-50 rounded-lg  list-none z-10  absolute py-4 my-2 px-5 space-y-4'>
                         <li>
 
                         <Link to='/books' className='hover:text-yellow-600 mt-5'>Books</Link>
@@ -456,14 +456,14 @@ export default function Header() {
 
                         <Link to='/exam-combos' className='hover:text-yellow-600 mt-5'>Exam Combos</Link>
                         </li>
-                        <li>
+                        {/* <li>
 
                         <Link to='/online-test' className='hover:text-yellow-600 mt-5'>Online Test</Link>
                         </li>
                         <li>
 
                         <Link to='/videocourses' className='hover:text-yellow-600 mt-5'>Video Courses</Link>
-                        </li>
+                        </li> */}
                         <li>
 
                         <Link to='/magazines' className='hover:text-yellow-600 mt-5'>Magazines</Link>
@@ -494,8 +494,11 @@ export default function Header() {
                       
                     </div>
 
+
                     <div className='cursor-pointer hover:bg-blue-500  h-[60px] pt-[18px] px-2 rounded-lg'>
+                      <Link to="/coaching-institutes" >
                       <p className=''>Coaching Institues</p>
+                      </Link >
                     </div>
                     <div className='cursor-pointer hover:bg-blue-500  h-[60px] pt-[18px] px-2 rounded-lg'>
                       <p className=''>Media Coverage</p>

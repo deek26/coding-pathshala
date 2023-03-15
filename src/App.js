@@ -25,6 +25,7 @@ import Magazines from "./pages/Magazines";
 import Affiliates from "./pages/Affiliates";
 import Authors from "./pages/Authors";
 import Partners from "./pages/Partners";
+import CoachingInstitutes from "./pages/CoachingInstitutes"
 
 
 function App() {
@@ -57,6 +58,8 @@ function App() {
         <Route path="/authors" element={<Authors />} />
         <Route path="/affiliates" element={<Affiliates />} />
         <Route path="/partners" element={<Partners />} />
+        <Route path="/coaching-institutes" element={<CoachingInstitutes />} />
+
         
       </Routes>
 
