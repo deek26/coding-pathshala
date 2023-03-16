@@ -348,6 +348,20 @@ export default function Home() {
           <h1 className="text-center text-white font-mono text-3xl">PROMOTION & OFFER </h1>
           <hr className="w-[20%]"></hr>
         </div>
+        <div className="w-[80%] m-auto flex space-x-3 mb-[100px] ">
+        <img src="patwar.jpg" alt="" className="h-[500px] w-[300px]" />
+        <img src="currentaffairs.jpg" alt="" className="h-[500px] w-[300px]" />
+        <div className="space-y-2">
+          <div className="flex space-x-3 ">
+            <div className="space-y-3">
+              <img src="delivery.jpg" alt="" className="h-[250px] w-[300px]" />
+              <img src="dlivery-b.jpg" alt="" className="h-[100px] w-[300px]" />
+            </div>
+            <img src="police.jpg" alt="" className="w-[300px] h-[365px]" />
+          </div>
+          <img src="statebank.jpg" alt="" className="h-[125px] w-[600px]" />
+        </div>
+      </div>
       <Link to="/Catalogue">
         <p className=" absolute top-[80%] left-0 bg-orange-500 text-white text-bold px-2 rotate-90 rounded-md cursor-pointer z-50">
           CATALOGUE

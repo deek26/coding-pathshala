@@ -408,7 +408,7 @@ export default function Header() {
           </div>
 
 
-          <div className='flex text-white space-x-[30px] items-center bg-black h-[60px] font-semibold cursor-pointer'>
+          <div className='flex text-white space-x-[50px] items-center bg-black h-[60px] font-semibold cursor-pointer'>
 
                     <div className="flex items-center group pl-10 space-x-8 ml-[100px] border-[#6b705c] border-r-[1px] relative h-full hover:bg-blue-500 p-1 rounded-md ">
                         <p className='text-white'>
@@ -500,11 +500,11 @@ export default function Header() {
                       <p className=''>Coaching Institues</p>
                       </Link >
                     </div>
-                    <div className='cursor-pointer hover:bg-blue-500  h-[60px] pt-[18px] px-2 rounded-lg'>
-                      <p className=''>Media Coverage</p>
-                    </div>
+                   
                     <div className='flex space-x-2 items-center cursor-pointer hover:bg-blue-500 h-full p-2 rounded-lg'>
-                      <p className=''>Free Content</p>
+                      <Link to='/exam-updates'>
+                      <p className=''>Exam Updates</p>
+                      </Link>
                       <IoIosArrowDown/>
                     </div>
 
