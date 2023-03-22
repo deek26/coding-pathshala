@@ -27,6 +27,8 @@ import Authors from "./pages/Authors";
 import Partners from "./pages/Partners";
 import CoachingInstitutes from "./pages/CoachingInstitutes"
 import ExamUpdates from "./pages/ExamUpdates";
+import Favorite from "./pages/Favorite";
+import Mycart from "./pages/Mycart";
 
 
 
@@ -62,6 +64,8 @@ function App() {
         <Route path="/partners" element={<Partners />} />
         <Route path="/coaching-institutes" element={<CoachingInstitutes />} />
         <Route path="/exam-updates" element={<ExamUpdates />} />
+        <Route path="/favorite" element={<Favorite />} />
+        <Route path="/mycart" element={<Mycart />} />
 
         
       </Routes>

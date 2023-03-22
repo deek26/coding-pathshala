@@ -390,16 +390,27 @@ export default function Header() {
                      <FiHeart className='h-[30px] w-[40px] cursor-pointer' />
                     
                           <div className='text-md cursor-pointer'>
-                            <p>Favorite</p>
-                            <p>My Wish List</p>
+                            <Link to='Favorite'>
+                            
+                            <p>
+                              <span>
+                              Favorite
+                                </span>
+                                <br />
+
+                            My Wish List
+                                </p>
+                            </Link>
                           </div>
                       </div>
                           <div className='flex items-center'> 
                             <BsHandbag className='h-[30px] w-[40px] cursor-pointer' />
                     
                           <div className='text-md cursor-pointer'>
+                            <Link to="/mycart">
                             <p>My Cart</p>
                             <p>₹0.00</p>
+                            </Link>
                           </div>
 
                       </div>        
