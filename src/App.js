@@ -29,6 +29,8 @@ import CoachingInstitutes from "./pages/CoachingInstitutes"
 import ExamUpdates from "./pages/ExamUpdates";
 import Favorite from "./pages/Favorite";
 import Mycart from "./pages/Mycart";
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -74,6 +76,18 @@ function App() {
 
 
     </Router>
+    <ToastContainer
+          position="bottom-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+      />
    
    
    </>
