@@ -52,7 +52,7 @@ export default function Signin() {
       const userCredentials = await signInWithEmailAndPassword(auth, email, password)
       const user=userCredentials.user
       toast.success("Login Successful")
-      navigate('/')
+      navigate('/home')
     } catch (error) {
       toast.error("Invalid Credentials")
     }
@@ -126,9 +126,12 @@ export default function Signin() {
 
             <div className='space-x-6'>
               <button className='text-white bg-black w-36 py-2 font-semibold rounded text-lg'
-              onClick={OAuth}
+              onClick={onSubmit}
               >Login</button>
+              <Link to={"/forgot-password"} >
+
               <button className=' bg-blue-200 w-[50%] font-semibold rounded py-2 text-lg'>Forgot Your Password?</button>
+              </Link>
             </div>
 
             <div className='my-5'>
