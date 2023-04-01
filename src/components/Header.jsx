@@ -1,30 +1,46 @@
 import React from 'react'
 import {ImWhatsapp} from 'react-icons/im'
-import logo from './assests/svg/logo.png'
+import logo from '../components/assets/svg/logo.png'
 import {GoSearch} from 'react-icons/go'
 import {FiUsers} from 'react-icons/fi'
 import {FiHeart} from 'react-icons/fi'
 import {BsHandbag} from 'react-icons/bs'
 import {IoIosArrowDown} from 'react-icons/io'
-import { useNavigate } from 'react-router'
 import { Link } from 'react-router-dom'
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { useEffect } from "react";
+import { useState } from "react";
+import { useLocation, useNavigate } from "react-router";
 
 
 export default function Header() {
+  const auth = getAuth();
 
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [title, settitle] = useState("SignIn");
 
-
-  const navigate =useNavigate()
-
-
-
-      function dropdown(){
-        <div>
-          hello
-        </div>
-
-        
+  useEffect(() => {
+    const auth = getAuth();
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        settitle("Profile");
+      } else {
+        settitle("SignIn");
       }
+    });
+  }, [auth]);
+
+  function matchroute(route) {
+    if (route === location.pathname) {
+      return true;
+    }
+  }
+
+
+
+
+
 
 
   return (
@@ -35,9 +51,13 @@ export default function Header() {
           <div className='flex justify-end items-center bg-black h-[40px]  '>
             <div >
               <ul className='flex space-x-4 mr-[130px]'>
-                <li className={`text-white font-semibold text-[15px] cursor-pointer`}
-                onClick={()=>navigate('/MyAccount')}
-                >My Account</li>
+                <li className={`text-white font-semibold text-[15px] cursor-pointer ${
+                    matchroute("/MyAccount") ||
+                    (matchroute("/Profile") && " text-white border-b-red-600")
+                  }
+`}
+                onClick={()=>navigate('/Profile')}
+                >{title}</li>
                 <li className={`bg-white w-[1px] h-3 mt-[6px]`}></li>
                 <li className={`text-white font-semibold text-[15px] cursor-pointer`}
                 onClick={()=>navigate('/FAQs')}
@@ -59,7 +79,7 @@ export default function Header() {
           <div className='flex mt-4 '>
              <div>
                 <img src={logo} alt='logo' className='h-[100px] w-[200px] cursor-pointer '
-                onClick={()=>navigate('/home')}
+                onClick={()=>navigate('/')}
                 />
                </div>
 

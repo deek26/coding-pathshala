@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MyAccount from './pages/MyAccount';
+// import MyAccount from './pages/Signin';
 import FAQs from './pages/FAQs';
 import Contactus from './pages/Contactus';
 import Home from './pages/Home';
@@ -29,6 +29,10 @@ import CoachingInstitutes from "./pages/CoachingInstitutes"
 import ExamUpdates from "./pages/ExamUpdates";
 import Favorite from "./pages/Favorite";
 import Mycart from "./pages/Mycart";
+import PrivateRoutes from "./components/PrivateRoutes";
+import Profile from "./pages/Profile";
+import Loader from "./components/Loader";
+import { UseAuthStatus } from "./pages/UseAuthStatus";
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -42,9 +46,9 @@ function App() {
       <Routes>
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/myaccount" element={<MyAccount />} />
+        {/* <Route path="/myaccount" element={<MyAccount />} /> */}
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/faqs" element={<FAQs />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -68,6 +72,11 @@ function App() {
         <Route path="/exam-updates" element={<ExamUpdates />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/mycart" element={<Mycart />} />
+        <Route path="/Loader" element={<Loader />} />
+        <Route path="/UseAuthStatus" element={<UseAuthStatus />} />
+        <Route path="/profile" element={<PrivateRoutes />}>
+            <Route path="/profile" element={<Profile />} />  
+          </Route>
 
         
       </Routes>

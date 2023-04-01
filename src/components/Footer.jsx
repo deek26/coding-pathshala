@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './assests/svg/logo.png'
+import logo from '../components/assets/svg/logo.png'
 import { Link } from 'react-router-dom'
 import {FaFacebookF ,FaInstagram,FaYoutubeSquare,FaPinterest} from 'react-icons/fa'
 import {GrLinkedinOption} from 'react-icons/gr'
