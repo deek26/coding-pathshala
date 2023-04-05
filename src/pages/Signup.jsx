@@ -69,7 +69,7 @@ export default function Signup() {
  
   return (
     <div className='w-[40%] m-auto my-32'>
-      <div className='flex items-center justify-between bg-black text-white font-bold p-3 text-2xl my-8'>
+      <div className='flex items-center justify-between bg-black text-white font-bold p-3 text-2xl my-8 '>
         <div className='flex items-center space-x-2'>
           <MdOutlineCreateNewFolder/>
           <h1>Create New Account</h1>

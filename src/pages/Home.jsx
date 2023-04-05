@@ -32,8 +32,8 @@ export default function Home() {
   return (
     <>
       <div className="relative w-[80%] m-auto">
-        <div className="flex  m-auto">
-          <div className="w-[80%]  relative ">
+        <div className="md:flex  md:m-auto  ">
+          <div className="md:w-[80%] w-[1200px]  relative ">
             <div
               style={{ backgroundImage: `url(${slides[Currentstate].url})` }}
               className="w-full h-[400px] bg-center bg-cover duration-1000"

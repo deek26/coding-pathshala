@@ -20,6 +20,12 @@ export default function Header() {
   const navigate = useNavigate();
   const [title, settitle] = useState("SignIn");
 
+
+  function onClick(){
+    document.getElementById('menu').style.display='block'
+    // document.getElementById('menu').style.display='none'
+  }
+
   useEffect(() => {
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
@@ -38,7 +44,7 @@ export default function Header() {
   }
 
 
-
+  
 
 
 
@@ -46,10 +52,50 @@ export default function Header() {
   return (
 <>
 
-  <div>
+  <div className='w-[1321px]'>
       <header>
-          <div className='flex justify-end items-center bg-black h-[40px]  '>
+        <div className='md:hidden flex justify-around items-center shadow-md'>
+
+        <div className='bg-white justify-center  flex flex-col items-center space-y-2 w-[50px] h-[50px]'>
+          <div className='w-[40px] h-[3px] bg-gray-400'></div>
+          <div className='w-[40px] h-[3px] bg-gray-400'></div>
+          <div className='w-[40px] h-[3px] bg-gray-400'></div> 
+        </div>
+
+        <div>
+          <img src={logo} alt='logo' className='h-[100px] w-[200px] cursor-pointer '
+          onClick={()=>navigate('/')}
+          />
+          </div>
+        
+        <GoSearch size='25px'></GoSearch>
+
+        </div>
+        <ul onClick={onClick} id='menu' className='flex-col space-x-4 mr-[130px] bg-black items-center justify-center hidden '>
+                <li className={`text-white font-semibold text-[15px] cursor-pointer ${
+                    matchroute("/MyAccount") ||
+                    (matchroute("/Profile") && " text-white border-b-red-600")
+                  }
+`}
+                onClick={()=>navigate('/Profile')}
+                >{title}</li>
+                {/* <li className={`bg-white w-[1px] h-3 mt-[6px]`}></li> */}
+                <li className={`text-white font-semibold text-[15px] cursor-pointer`}
+                onClick={()=>navigate('/FAQs')}
+                >FAQs</li>
+                {/* <li className={`bg-white w-[1px] h-3 mt-[6px]`}></li> */}
+                <li className={`text-white font-semibold text-[15px]  cursor-pointer flex  items-center `}
+                onClick={()=>navigate('/ContactUs')}
+                >Contact Us
+                 <ImWhatsapp className='ml-3 h-5 w-5' 
+                   onClick={()=>navigate('/Whatsapp')}
+                 />
+                </li>    
+              </ul>
+
+          <div className='md:flex justify-end items-center bg-black h-[40px] hidden '>
             <div >
+
               <ul className='flex space-x-4 mr-[130px]'>
                 <li className={`text-white font-semibold text-[15px] cursor-pointer ${
                     matchroute("/MyAccount") ||
@@ -76,7 +122,11 @@ export default function Header() {
           </div>
 
 
-          <div className='flex mt-4 '>
+        
+          
+
+
+          <div className='md:flex mt-4  md:justify-center hidden  '>
              <div>
                 <img src={logo} alt='logo' className='h-[100px] w-[200px] cursor-pointer '
                 onClick={()=>navigate('/')}
@@ -84,7 +134,7 @@ export default function Header() {
                </div>
 
                <div className='flex items-center space-x-5'>
-                  <div className='flex items-center relative'>
+                  <div className=' items-center relative hidden md:flex'>
                         <input type='search' 
                         placeholder='Search entire store here....'
                         className='border-[2px] border-black w-[500px] h-[55px] rounded ml-48 pl-4'/>
@@ -439,7 +489,7 @@ export default function Header() {
           </div>
 
 
-          <div className='flex text-white space-x-[50px] items-center bg-black h-[60px] font-semibold cursor-pointer'>
+          <div className='md:flex hidden text-white space-x-[50px] items-center bg-black h-[60px] font-semibold cursor-pointer'>
 
                     <div className="flex items-center group pl-10 space-x-8 ml-[100px] border-[#6b705c] border-r-[1px] relative h-full hover:bg-blue-500 p-1 rounded-md ">
                         <p className='text-white'>
